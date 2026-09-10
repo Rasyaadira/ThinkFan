@@ -9,6 +9,8 @@ outside the Python standard library.
 GUI  →  sudo -n /usr/local/bin/fanctl set <level>  →  /proc/acpi/ibm/fan  →  EC
 ```
 
+* tested only on Thinkpad X1 Carbon G7 
+
 ## Run
 
 ```bash
@@ -107,8 +109,6 @@ python3 -c "import importlib.util as u; s=u.spec_from_file_location('t','thinkpa
 
 The command above exercises the sensor and control layers without an X server —
 `tkinter` is imported inside `run_gui()`, not at module level.
-
-Screenshot: [`screenshots/gui.png`](screenshots/gui.png)
 
 Full system documentation (architecture, security design, pitfalls,
 verification): `~/.openclaw/workspace/fanapp/docs/00-index.md`.
